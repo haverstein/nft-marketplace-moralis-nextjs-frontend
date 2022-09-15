@@ -131,7 +131,7 @@ async function main() {
     const cancelledResponse = await Moralis.Cloud.run("watchContractEvent", itemCancelledOptions, {
         useMasterKey: true,
     })
-    if (listedResponse.success) {
+    if (listedResponse.success && boughtResponse.success && cancelledResponse.success) {
         console.log("Success! Database updated successfully with the three events")
     } else {
         console.log("Something went wrong...")
@@ -144,3 +144,8 @@ main()
         console.error(error)
         process.exit(1)
     })
+/* yarn moralis:sync for syncing the hardhat with the moralis server 
+(look in the package.json to learn more about it)*/
+
+/*If you reset the hardhat blockchain then you can reset the local devchain in the details section of the 
+moralis server to let the database to run again.*/
