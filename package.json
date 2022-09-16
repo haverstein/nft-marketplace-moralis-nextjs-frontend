@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "moralis:sync": "moralis-admin-cli connect-local-devchain --chain hardhat --moralisSubdomain ddbuab3jx20p.usemoralis.com --frpcPath ./frpc/frpc.exe",
-    "moralis:cloud": "moralis-admin-cli watch-cloud-folder --moralisSubdomain ddbuab3jx20p.usemoralis.com --autoSave 1 --moralisCloudfolder ./cloudFunctions"
+    "moralis:sync": "moralis-admin-cli connect-local-devchain --chain hardhat --moralisSubdomain aixbaqxgpttg.usemoralis.com --frpcPath ./frpc/frpc.exe",
+    "moralis:cloud": "moralis-admin-cli watch-cloud-folder --moralisSubdomain aixbaqxgpttg.usemoralis.com --autoSave 1 --moralisCloudfolder ./cloudFunctions"
   },
   "dependencies": {
     "dotenv": "^16.0.2",

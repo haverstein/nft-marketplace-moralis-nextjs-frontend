@@ -56,7 +56,7 @@ async function main() {
         chainId: moralisChainId,
         address: contractAddress,
         sync_historical: true,
-        topic: "IemBought(address,address,uint256,uint256)",
+        topic: "ItemBought(address,address,uint256,uint256)",
         abi: {
             anonymous: false,
             inputs: [
@@ -149,3 +149,4 @@ main()
 
 /*If you reset the hardhat blockchain then you can reset the local devchain in the details section of the 
 moralis server to let the database to run again.*/
+// node addEvents.js to push this events
