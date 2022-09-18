@@ -9,7 +9,7 @@ export default function Home() {
         (query) => query.limit(10).descending("tokenId")
     )
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto p-6">
             <h1 className="py-4 px-4 font-bold text-2xl">Recently Listed</h1>
             <div className="flex flex-wrap">
                 {isWeb3Enabled ? (
@@ -46,4 +46,3 @@ export default function Home() {
         </div>
     )
 }
-//27.13.16
